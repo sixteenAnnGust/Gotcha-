@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    background-color: rgb(248, 247, 239);
+}
+@font-face {
+	font-family: 'VinSlabPro-Light'; 
+	src: local('VinSlabPro-Light'),
+		url("fonts/VinSlabPro-Light_0.ttf"); 
+}
+@font-face {
+	font-family: 'Mak'; 
+	src: local('Mak'),
+		url("fonts/19281.ttf"); 
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    border-top: solid 0.5px rgb(58, 46, 31);
+    border-bottom: solid 0.5px rgb(58, 46, 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(226, 226, 219);
+}
+.name {
+    color: rgb(78, 152, 167);
+    font-size: 45pt;
+    font-family: 'Mak';
+    font-weight: 100;
+    margin-right: 500px;
+}
+.navTop a{
+    margin-left: 100px;
+    text-decoration: none;
+    color: rgb(58, 46, 31);
+    font-size: 26pt;
+    font-family: 'VinSlabPro-Light';
+    transition: all 1s ease 0s;
+}
+.navTop a:hover{
+    color: rgb(78, 152, 167);
+    font-size: 28pt;
+}
+.container{
+    margin: 170px 0 70px 0;
+    height: 600px;
+}
+i{
+    color: rgb(78, 152, 167);
+}
+.cof{
+    width: 380px;
+    height: 200px;
+    text-align: justify;
+    font-family: 'VinSlabPro-Light';
+    font-size: 16pt;
+    color: rgb(58, 46, 31);
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    color: rgb(78, 152, 167);
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(78, 152, 167, 0.71);
+    color: rgb(248, 247, 239);
+    font-family: 'VinSlabPro-Light';
+    font-size: 28pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(248, 247, 239);
+    transition: all 1s ease 0s;
+}
+.footer a:hover {
+    transform: scale(1.1);
+}
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 250px;
+}
+.addBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+@media screen and (max-width: 1024px){
+    
+    .map{
+        width: 400px;
+        height: 300px;
+    }
+    .liana{
+        width: 70px;
+        height: 240px;
+    }
+    .gliana{
+        width: 70px;
+        height: 240px;
+    }
+    .cof{
+        padding: 15px;
+    }
+    #box2{
+        padding-top: 150px;
+    }
+    .container{
+        height: 700px;
+    }
+    .navTop a{
+        margin-left: 50px;
+        display: flex;
+    }
+}
+@media screen and (max-width: 425px){
+    .box{
+        flex-direction: column;
+    }
+    
+}

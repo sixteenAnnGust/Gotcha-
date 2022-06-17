@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    background-color: rgb(248, 247, 239);
+}
+@font-face {
+	font-family: 'VinSlabPro-Light'; 
+	src: local('VinSlabPro-Light'),
+		url("fonts/VinSlabPro-Light_0.ttf"); 
+}
+@font-face {
+	font-family: 'Mak'; 
+	src: local('Mak'),
+		url("fonts/19281.ttf"); 
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    border-top: solid 0.5px rgb(58, 46, 31);
+    border-bottom: solid 0.5px rgb(58, 46, 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(226, 226, 219);
+}
+.navTop a{
+    margin-left: 100px;
+    text-decoration: none;
+    color: rgb(58, 46, 31);
+    font-size: 26pt;
+    font-family: 'VinSlabPro-Light';
+    transition: all 1s ease 0s;
+}
+.navTop a:hover{
+    color: rgb(78, 152, 167);
+    font-size: 28pt;
+}
+.navTop .icon {
+    display: none;
+}
+.containerIntro{
+    margin: 200px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 247, 239);
+}
+.txtBox{
+    width: 40%;
+}
+.descr{
+    font-size: 18pt;
+    font-family: 'VinSlabPro-Light';
+    text-align: justify;
+  }
+
+  .nameLogo {
+    color: rgb(78, 152, 167);
+    font-size: 110pt;
+    font-family: 'Mak';
+    font-weight: 100;
+  }
+  
+.cell{
+    position: relative;
+    width: 675px;
+    height: 449px;
+    overflow: hidden;
+}
+.cellLine{
+    position: relative;
+    width: 3375px;
+    height: 100%;
+    display: flex;
+    left:0;
+    transition: all 1s ease 0s;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+.btnLeft {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    color: rgb(58, 46, 31);
+    width: 20px;
+    height: 20px;
+    font-size: 25pt;
+    cursor: pointer;
+}
+.btnRight{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    color: rgb(58, 46, 31);
+    width: 20px;
+    height: 20px;
+    font-size: 25pt;
+    cursor: pointer;
+}
+.btnLeft:hover{
+    color: rgb(78, 152, 167);
+}
+.btnRight:hover{
+    color: rgb(78, 152, 167);
+}
+.txtLine{
+    height: 100px;
+    background-color: rgb(248, 247, 239);
+    margin-right: 75px;
+}
+.txtLine p{
+    color: rgb(78, 152, 167);;
+    font-size: 40pt;
+    font-family: 'Mak';
+    float: right;
+}
+.newsBox{
+    display: flex;
+    flex-direction: column;
+}
+.newsBox1{
+    display: flex;
+    background-color: rgb(248, 247, 239);
+    justify-content: end;
+    align-items: center;
+    margin: 0 50px 50px 0;
+}
+.newsBox2{
+    display: flex;
+    background-color: rgb(248, 247, 239);
+    justify-content: start;
+    align-items: center;
+    margin: 50px 0 0 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.new{
+    background-color: rgb(255, 254, 249);
+    margin: 25px;
+    display: flex;
+    justify-content: space-between; 
+}
+.newtxt{
+    margin: 50px;
+    font-size: 18pt;
+    font-family: 'VinSlabPro-Light';
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(78, 152, 167, 0.71);
+    color: rgb(248, 247, 239);
+    font-family: 'VinSlabPro-Light';
+    font-size: 28pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 50px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(248, 247, 239);
+    transition: all 1s ease 0s;
+}
+.footer a:hover {
+    transform: scale(1.1);
+}
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 250px;
+}
+.addBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+@media screen and (max-width: 1400px) {
+    .containerIntro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(248, 247, 239);
+    }
+    .txtBox{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .list{
+        display: none;
+    }
+    .glist{
+        display: none;
+    }
+    .map{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 425px){
+    
+    .map{
+        width: 400px;
+        height: 300px;
+    }
+    /* не работает хз почему вообще */
+    .newtxt{
+        font-size: 100pt;
+        margin: 25px;
+    }
+}

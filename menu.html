@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>меню</title>
+    <link rel="stylesheet" href="menu.css">
+    <link type="Image/x-icon" href="pic/favicon_1.ico" rel="icon">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html"><img src="pic/logo.png" width="64px" height="80px" alt=""></a>
+        <nav class="navTop">
+            <a href="menu.html">меню</a>
+            <a href="coffee.html">кофе</a>
+            <a href="roasting.html">обжарка</a>
+        </nav>
+    </div>
+    <div class="container">
+        <button class="tablink" onclick="openPage('coffee', this, '#a7ccd3')" id="defaultOpen">кофе и какао</button>
+        <button class="tablink" onclick="openPage('cold', this, '#b8d6dc')">холодненькое</button>
+        <button class="tablink" onclick="openPage('hot', this, '#a7ccd3')">горяченькое</button>
+        <button class="tablink" onclick="openPage('tea', this, '#b8d6dc')">чай</button>
+        <div id="coffee" class="tabcontent">
+            <div class="txtBox">
+                <h1>чёрный кофе</h1>
+                <div class="posContainer">
+                    <p>эспрессо</p>
+                    <p>130</p>
+                </div>
+                <div class="posContainer">
+                    <p>фильтр</p>
+                    <p>130|170</p>
+                </div>
+                <div class="posContainer">
+                    <p>половинка фильтра</p>
+                    <p>80</p>
+                </div>
+                <div class="posContainer">
+                    <p>хэнд брю</p>
+                    <p>220</p>
+                </div>
+            </div>
+            <div class="txtBox1">
+                <h1>белый кофе</h1>
+                <h5>можно приготовить на растительном молоке: овсяное</h5>
+                <h5>без доплаты, кокосовое + 50 рублей</h5>
+                <div class="posContainer">
+                    <p>капучино</p>
+                    <p>180|230</p>
+                </div>
+                <div class="posContainer">
+                    <p>флэт уайт</p>
+                    <p>180   </p>
+                </div>
+                <div class="posContainer">
+                    <p>латте</p>
+                    <p>230</p>
+                </div>
+                <div class="posContainer">
+                    <p>раф</p>
+                    <p>190|240</p>
+                </div>
+                <div class="posContainer">
+                    <p>раф с кокосовой сгущенкой</p>
+                    <p>250</p>
+                </div>
+                <div class="posContainer">
+                    <p>бариста сет: эспрессо и капучино</p>
+                    <p>260</p>
+                </div>
+            </div>
+            <div class="txtBox">
+                <h1>какао</h1>
+                <div class="posContainer">
+                    <p>классический</p>
+                    <p>170|220</p>
+                </div>
+                <div class="posContainer">
+                    <p>кокосовый</p>
+                    <p>250</p>
+                </div>
+                <h3>amazing cacao: индия керала 70% | перу токаче 75%</h3>
+                <div class="posContainer">
+                    <p>шот</p>
+                    <p>160</p>
+                </div>
+                <div class="posContainer">
+                    <p>с молочком</p>
+                    <p>250</p>
+                </div>
+            </div>
+        </div>
+        <div id="cold" class="tabcontent">
+            <div class="txtBox3">
+                <div class="posContainer2">
+                    <p>фильтр со льдом</p>
+                    <p>150</p>
+                </div>
+                <div class="posContainer2" style="margin-left: 20%;">
+                    <p>айс-флэт</p>
+                    <p>180</p>
+                </div>
+                <div class="posContainer2" style="margin-left: 40%;">
+                    <p>айс-латте</p>
+                    <p>230</p>
+                </div>
+                <div class="posContainer2" style="margin-left: 60%;">
+                    <p>матча латте со льдом</p>
+                    <p>250</p>
+                </div>
+                <div class="posContainer2" style="margin-left: 80%;">
+                    <p>холодная тамаготча</p>
+                    <p>250</p>
+                </div>
+            </div>
+        </div>
+        <div id="hot" class="tabcontent">
+            <div class="txtBox3">
+                <div class="posContainer1" style="margin-left: 0%;">
+                    <p>петрус</p>
+                    <p>260</p>
+                </div>
+                <p class="small">горячее вишнёвое пиво</p>
+                <div class="posContainer1" style="margin-left: 11%;">
+                    <p>айриш</p>
+                    <p>260</p>
+                </div>
+                <p class="small" style="margin-left: 11%;">с хмелем и кокосовыми сливками</p>
+                <div class="posContainer1" style="margin-left: 22%;">
+                    <p>шоколадный гляссе</p>
+                    <p>260</p>
+                </div>
+                <p class="small" style="margin-left: 22%;">amazing cacao с шариком джелато</p>
+                <div class="posContainer1" style="margin-left: 33%;">
+                    <p>тизан 75</p>
+                    <p>170</p>
+                </div>
+                <p class="small" style="margin-left: 33%;">рябина, корица, кардамон, бадьян, имбирь</p>
+                <div class="posContainer1" style="margin-left: 44%;">
+                    <p>тамаготча лё классик</p>
+                    <p>260</p>
+                </div>
+                <p class="small" style="margin-left: 44%;">хмель, манго, маракуйя и кайенский перец</p>
+                <div class="posContainer1" style="margin-left: 59%;">
+                    <p>дачный чаёк с мятой и смородиной</p>
+                    <p>250</p>
+                </div>
+                <div class="posContainer1" style="margin-left: 73%;">
+                    <p>малиновый чай со свежей мятой</p>
+                    <p>250</p>
+                </div>
+            </div>
+        </div> 
+        <div id="tea" class="tabcontent">
+            <div class="txtBox2">
+                <h1>модный чай</h1>
+                <h5>по умолчанию на кокосовом молоке</h5>
+                <div class="posContainer">
+                    <p>матча шот</p>
+                    <p>130</p>
+                </div>
+                <div class="posContainer">
+                    <p>матча флэт</p>
+                    <p>200</p>
+                </div>
+                <div class="posContainer">
+                    <p>матча латте</p>
+                    <p>240</p>
+                </div>
+                <div class="posContainer">
+                    <p>ходзитя флэт</p>
+                    <p>200</p>
+                </div>
+            </div>
+            <div class="txtBox2">
+                <h1>традиционный чай</h1>
+                <div class="posContainer">
+                    <p>люй мао фэн</p>
+                    <p>все по 170</p>
+                </div>    
+                <p class="small">китайский зелёный</p>
+                <p>кокейтя</p>
+                <p class="small">японский зелёный</p>
+                <p>хэй цзинь сяо чжун</p>
+                <p class="small">красный</p>
+                <p>те гуань инь</p>
+                <p class="small">улун</p>
+                <p>мо ли хуа</p>
+                <p class="small">с жасмином</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/gotcha_brew_bar/232605056827/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Gotcha! brew bar</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/coffee_shop/35193114937/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Кофейня в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/tea_and_coffee_store/184108035/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Магазин чая и кофе в Санкт‑Петербурге</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUJeDXIPB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="addBox">
+            <p>10:00 - 21:00</p>
+            <p>СПб, Литейный проспект, 41</p>
+        </div>
+        <div class="contactBox">
+            <p>8 (908) 175-49-89</p>
+            <a href="https://t.me/vgotcheneze">телеграм  <i class="fa fa-telegram" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/gotcha.brewbar?igshid=YmMyMTA2M2Y=">инстаграм  <i class="fa fa-instagram" aria-hidden="true"></i></a>    
+        </div>
+    </div>
+    <script src="pages.js"></script>
+</body>
+</html>
